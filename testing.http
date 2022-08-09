@@ -1,0 +1,16 @@
+### Home
+GET http://localhost:2345/home
+Authorization: Bearer {{auth_token}}
+Content-Type: application/json
+
+### Login
+POST http://localhost:2345/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "admin@mail.com",
+  "password": "admin"
+}
+
+> {% client.global.set("auth_token", response.body.data.access_token); %}
