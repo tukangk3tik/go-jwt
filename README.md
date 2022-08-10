@@ -34,5 +34,4 @@ You can now try hitting the home route from the same client to get the home mess
 GET http://localhost:2345/home
 ```
 
-You can use
 
